@@ -1,20 +1,31 @@
 ﻿// По двум заданным числам проверять является ли первое квадратом второго
 
 Console.WriteLine("Введите 1-ое число A: ");
-int A = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Dедите 2-ое число B: ");
-int B = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
 
+// я тут проверяю каждое число, усложнила ахах
+if (a * a == b)
+{
+    Console.WriteLine($"{b} является квадратом числа {a}");
+}
+else if (b * b == a)
+{
+    Console.WriteLine($"{a} является квадратом числа {b}");
+}
+else
+{
+   Console.WriteLine("Не является");
+}
 
-if (A * A == B)
-    Console.WriteLine($"  B = {B} - является квадратом числа A({A})");
-if (B * B == A)
-    Console.WriteLine($"  A = {A} - является квадратом числа B({B})");
-
-
-/*else
-
-       Console.WriteLine("Ни A, ни B не являются квадратами друг друга");
-       как сделать, чтобы не выходила последняя стркоа
+/* РЕШЕНИЕ ПРЯМО ПО УСЛОВИЯМ
+if (a * a == b)
+{
+    Console.WriteLine($"{b} является квадратом числа {a}");
+}
+else
+{
+   Console.WriteLine("Не является");
+}
 */
-
