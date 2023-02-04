@@ -12,8 +12,8 @@ int Sunday = 7;
 
 Console.WriteLine("Введите номер дня недели ");
 int A = int.Parse(Console.ReadLine());
- 
- if (A == Saturday || A == Sunday)
-Console.WriteLine("Да, заданное вами число является выходным днем");
-else 
-Console.WriteLine("Нет, заданное число обозначает будний день");
+
+if (A == Saturday || A == Sunday)
+    Console.WriteLine("Да, заданное вами число является выходным днем");
+else
+    Console.WriteLine("Нет, заданное число обозначает будний день");
