@@ -13,7 +13,7 @@ while (S > 0)
 Console.WriteLine(i);
 int[] array = new int[i - 1];
 
-void FillArray(int[] collection)
+void FilArray(int[] collection)
 {
     int length = collection.Length;
     int index = 0;
@@ -24,7 +24,7 @@ void FillArray(int[] collection)
         index++;
     }
 }
-void PrintArray(int[] col) // void-это метод, кот. ничего не возвращает 
+void PrinArray(int[] col) // void-это метод, кот. ничего не возвращает 
 {
     int count = col.Length;
     int position = 0;
@@ -35,8 +35,8 @@ void PrintArray(int[] col) // void-это метод, кот. ничего не 
     }
 }
 
-FillArray(array); // Заполнил массив
-PrintArray(array); //Распечатал массив
+FilArray(array); // Заполнил массив
+PrinArray(array); //Распечатал массив
 Console.WriteLine();
 
 
