@@ -8,8 +8,11 @@ int i = 0;
 while (S > 0)
 {
     S = S / 10;
+    //добавить сумму
     i++;
 }
+S = S / 10;
+
 Console.WriteLine(i);
 int[] array = new int[i - 1];
 
