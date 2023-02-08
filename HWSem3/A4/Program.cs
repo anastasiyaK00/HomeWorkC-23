@@ -12,7 +12,7 @@ while (i < N + 1)
     {
         Console.WriteLine($"{i} в кубе = {k}");
     }
-        i++;
+    i++;
 }
 
 
