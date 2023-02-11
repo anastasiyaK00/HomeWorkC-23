@@ -25,51 +25,42 @@ void Print(int[] b)
     }
 }
 
-void Minn(int[] s)
+int Minn(int[] s )
 {
     int i=0;
     int l=s.Length;
-    int min = i;
+     int p = i;
     while (i<l)
     {
-        if (s[i]>min)
+        if (s[i]<p)
         {
-            min = s[i];
+            p = s[i];
         }
         i++;
     }
+    return p;
 }
-void Max(int[] t)
+int Max(int[] o )
 {
     int i=0;
-    int l=t.Length;
-    int max = i;
+    int l=o.Length;
+     int k = i;
     while (i<l)
     {
-        if (t[i]<max)
+        if (o[i]>k)
         {
-            max = t[i];
+            k = o[i];
         }
         i++;
     }
-}
-//присовить методам возвращаемое значение и сделать доп ссылку
-
-void Search(int[] c)
-{
-    int a=Minn(array);
-    int l=s.Length;
-    int min = i;
-    while (i<l)
-    {
-        if (s[i]>min)
-        {
-            min = s[i];
-        }
-        i++;
-    }
+    return k;
 }
 Fill(array);
 Print(array);
-Console.WriteLine("Ответ: ");
-Minn(array);
+
+
+int a= Max(array);
+int b=Minn(array);
+
+  Console.WriteLine($"{a},{b}");
+
