@@ -1,7 +1,7 @@
 ﻿// 6.В Указанном массиве вещественных чисел 
 //найдите разницу между максимальным и минимальным элементом
 
-int[] array = new int[5];
+int [] array = new int[5];
 
 void Fill(int[] a)
 {
@@ -25,14 +25,14 @@ void Print(int[] b)
     }
 }
 
-int Minn(int[] s )
+int Minn(int[] s)
 {
-    int i=0;
-    int l=s.Length;
-     int p = i;
-    while (i<l)
+    int i = 0;
+    int l = s.Length;
+    int p = s[i];
+    while (i < l)
     {
-        if (s[i]<p)
+        if (s[i] < p)
         {
             p = s[i];
         }
@@ -40,14 +40,15 @@ int Minn(int[] s )
     }
     return p;
 }
-int Max(int[] o )
+
+int Max(int[] o)
 {
-    int i=0;
-    int l=o.Length;
-     int k = i;
-    while (i<l)
+    int i = 0;
+    int l = o.Length;
+    int k = 0;
+    while (i < l)
     {
-        if (o[i]>k)
+        if (o[i] > k)
         {
             k = o[i];
         }
@@ -55,12 +56,14 @@ int Max(int[] o )
     }
     return k;
 }
+
 Fill(array);
 Print(array);
 
+int a = Max(array);
+Console.WriteLine($"Маскимальное число в массиве = {a}");
+int b = Minn(array);
+Console.WriteLine($"Минимальное число в массиве = {b}");
 
-int a= Max(array);
-int b=Minn(array);
-
-  Console.WriteLine($"{a},{b}");
-
+int j = a-b;
+Console.WriteLine($"Разница между максимальным и минимальным элементом = {j}");
