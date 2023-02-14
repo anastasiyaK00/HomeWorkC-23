@@ -17,7 +17,19 @@ double b2 = double.Parse(Console.ReadLine() ?? "0");
 //k1x+b1=k2x+b2;
 //k1x-k2x=b2-b1;
 // сокращая уравнение получаем следующую формулу:
-double x = (b2 - b1) / (k1 - k2);
-double y = ((k1 * (b2 - b1)) / (k1 - k2)) + b1;
 
-Console.WriteLine($"{x},{y}");
+if ((k1 == k2) && (b1 == b2))
+{
+    Console.WriteLine("Прямые совпадают");
+}
+else if (k1 == k2)
+{
+    Console.WriteLine("Прямые параллельны");
+}
+else
+{
+    double x = (b2 - b1) / (k1 - k2);
+    double y = ((k1 * (b2 - b1)) / (k1 - k2)) + b1;
+    Console.WriteLine($"Прямые пересекаются в точке (x = {x}, y = {y})");
+}
+
